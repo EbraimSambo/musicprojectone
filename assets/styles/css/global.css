@@ -13,54 +13,71 @@ html {
 
 #app {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 4fr);
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 4fr);
+}
+#app a {
+  color: #fff !important;
 }
 
-#header, #main, #app {
-  width: 100%;
+#left {
+  background: #111;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-#header, #main {
-  height: 100vh;
+input {
+  height: 100% !important;
+}
+
+#left, #main, #app, input {
+  width: 100% !important;
+}
+
+#left, #main {
+  height: 100vh !important;
+}
+
+#header, #header nav ul {
+  display: flex;
+  flex-direction: column;
 }
 
 #header {
-  background: #111;
-  padding: 2rem;
-}
-#header a {
-  color: #fff !important;
-}
-#header .subone {
-  display: flex;
-  flex-direction: column;
   gap: 3rem;
 }
-#header .subone #searchnav {
-  height: 30px;
+#header #searchnav {
+  height: 40px;
 }
-#header .subone #searchnav input {
-  height: 100%;
-  width: 100%;
+#header #searchnav input {
   padding: 0.67rem;
 }
-#header .subone nav ul {
-  display: flex;
-  flex-direction: column;
+#header nav ul {
   gap: 0.22rem;
 }
-#header .subone nav ul li {
-  padding: 0.33rem;
+#header nav ul li {
+  padding: 0.63rem;
+  cursor: pointer;
 }
-#header .subone nav ul li a {
+#header nav ul li a {
   font-size: 1.8rem;
+  width: 100%;
 }
-#header .subone nav ul li:hover {
+#header nav ul li:hover {
   background: #6e6b6b;
+}
+#header #logo a {
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 #main {
   background: #c20a0a;
+}
+
+#footerMain a {
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=global.css.map */

@@ -10,41 +10,55 @@ html
 
 #app
     display: grid
-    grid-template-columns: minmax(0,1fr) minmax(0,4fr)
-
-#header, #main, #app
-    width: 100%
-
-#header, #main
-    height: 100vh
-
-#header
+    grid-template-columns: minmax(0,1.2fr) minmax(0,4fr)
+    a
+       color: #fff !important
+#left
     background: #111
     padding: 2rem
-    a
-        color: #fff !important
+    display: flex
+    flex-direction: column
+    justify-content: space-between
 
-    .subone
-        display: flex
-        flex-direction: column
-        gap: 3rem
-        #searchnav
-            height: 30px
-            input
-                height: 100%
-                width: 100%
-                padding: .67rem
-        nav
-            ul
-                display: flex
-                flex-direction: column
-                gap: .22rem
-                li
-                    padding: 0.33rem
-                    a
-                        font-size: 1.8rem
-                li:hover
-                    background: #6e6b6b
+input
+    height: 100% !important
+
+#left, #main, #app, input
+    width: 100% !important
+
+#left, #main
+    height: 100vh !important
+
+#header, #header nav ul
+    display: flex
+    flex-direction: column
+
+#header
+    gap: 3rem
+    #searchnav
+        height: 40px
+        input
+            padding: .67rem
+    nav
+        ul
+            gap: .22rem
+            li  
+                padding: .63rem
+                cursor: pointer
+                a
+                    font-size: 1.8rem    
+                    width: 100%   
+            li:hover
+                background: #6e6b6b
+
+    #logo
+        a
+            font-size: 1.4rem
+            font-weight: bold
 
 #main
     background: #c20a0a
+
+#footerMain
+    a
+        font-size: 1.2rem
