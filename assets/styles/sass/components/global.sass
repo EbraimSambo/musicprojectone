@@ -1,0 +1,50 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    text-decoration: none
+    list-style-type: none
+    letter-spacing: 0.2rem
+html
+    font-size: 62.5%
+
+#app
+    display: grid
+    grid-template-columns: minmax(0,1fr) minmax(0,4fr)
+
+#header, #main, #app
+    width: 100%
+
+#header, #main
+    height: 100vh
+
+#header
+    background: #111
+    padding: 2rem
+    a
+        color: #fff !important
+
+    .subone
+        display: flex
+        flex-direction: column
+        gap: 3rem
+        #searchnav
+            height: 30px
+            input
+                height: 100%
+                width: 100%
+                padding: .67rem
+        nav
+            ul
+                display: flex
+                flex-direction: column
+                gap: .22rem
+                li
+                    padding: 0.33rem
+                    a
+                        font-size: 1.8rem
+                li:hover
+                    background: #6e6b6b
+
+#main
+    background: #c20a0a
